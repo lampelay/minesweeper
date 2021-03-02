@@ -3,7 +3,7 @@
         BEGINNER_WIDTH,	BEGINNER_HEIGHT, BEGINNER_MINES_COUNT,
         AMATEUR_WIDTH, AMATEUR_HEIGHT, AMATEUR_MINES_COUNT,
         PROFESSIONAL_WIDTH, PROFESSIONAL_HEIGHT, PROFESSIONAL_MINES_COUNT
-    } from './default-board-options.js';
+    } from '../constants/default-board-options.js';
     
     export let width = BEGINNER_WIDTH;
     export let height = BEGINNER_HEIGHT;

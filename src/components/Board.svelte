@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   import BoardActionSelector from "./BoardActionSelector.svelte";
-  import { Status } from "./field-status.js";
+  import { Status } from "../constants/field-status.js";
   const emit = createEventDispatcher();
 
   export let fields = [];

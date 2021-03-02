@@ -1,9 +1,9 @@
 <script>
-  import BoardOptions from "./BoardOptions.svelte";
-  import GameStatus from "./GameStatus.svelte";
-  import Board from "./Board.svelte";
-  import { Status } from "./field-status.js";
-  import { createBoard } from "./board-creator.js";
+  import BoardOptions from "./components/BoardOptions.svelte";
+  import GameStatus from "./components/GameStatus.svelte";
+  import Board from "./components/Board.svelte";
+  import { Status } from "./constants/field-status.js";
+  import { createBoard } from "./utils/board-creator.js";
 
   let width = 10;
   let height = 10;
@@ -82,7 +82,7 @@
       for (let curY = y - 1; curY < y + 2; curY++) {
         if (curY < 0 || curY >= fields.length) continue;
         for (let curX = x - 1; curX < x + 2; curX++) {
-          if (curX < 0 || curX >= fields[0]?.length) continue;
+          if (curX < 0 || curX >= (fields[0] || []).length) continue;
           if (curX === x && curY === y) continue;
           open(curX, curY);
         }
