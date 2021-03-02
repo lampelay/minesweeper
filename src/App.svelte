@@ -26,7 +26,8 @@
       .map(() => Array(width).fill(0));
     let i = minesCount;
     for (let y = 0; y < fields.length; y++)
-      for (let x = 0; x < fields[y].length; x++) if (i-- > 0) fields[y][x] = -1;
+      for (let x = 0; x < fields[y].length; x++) 
+        if (i-- > 0) fields[y][x] = -1;
     statuses = Array(height)
       .fill()
       .map(() => Array(width).fill(Status.CLOSED));
