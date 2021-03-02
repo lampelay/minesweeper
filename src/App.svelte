@@ -4,10 +4,11 @@
   import Board from "./components/Board.svelte";
   import { Status } from "./constants/field-status.js";
   import { createBoard } from "./utils/board-creator.js";
+  import { BEGINNER_WIDTH, BEGINNER_HEIGHT, BEGINNER_MINES_COUNT } from './constants/default-board-options.js';
 
-  let width = 10;
-  let height = 10;
-  let minesCount = 10;
+  let width = BEGINNER_WIDTH;
+  let height = BEGINNER_HEIGHT;
+  let minesCount = BEGINNER_MINES_COUNT;
 
   let runGameMinesCount = minesCount;
 
