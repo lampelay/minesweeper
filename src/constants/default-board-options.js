@@ -1,5 +1,5 @@
-export const BEGINNER_WIDTH = 10;
-export const BEGINNER_HEIGHT = 10;
+export const BEGINNER_WIDTH = 9;
+export const BEGINNER_HEIGHT = 9;
 export const BEGINNER_MINES_COUNT = 10;
 
 export const AMATEUR_WIDTH = 16;
